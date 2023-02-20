@@ -1,9 +1,16 @@
+where = [[False] * 100 for _ in range(100)]
+
 N = int(input())
 
-long_ = 10
-
-for i in range(N):
-    a,b = map(int, input().split())
+for _ in range(N):
+    row,col = map(int,input().split())
     
+    for i in range(row, row+10):
+        for j in range(col,col+10):
+            where[i][j] = True
 
+space = 0
+for i in where:
+    space += i.count(True)
 
+print(space)
