@@ -21,7 +21,7 @@ for i in range(-4000, 4001):
         if temp == 2:
             break
 
-print(int(sum(num))/N))
+print(int(sum(num))/N)
 print(num[N//2])
 print(result)
 print(max(num) - min(num))
