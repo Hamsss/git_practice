@@ -13,4 +13,3 @@ while i != 200:
     else:
         sys.stdout.write(f"{i+1} {name[i][0]}\n")
         name[i].pop(0)
-    
