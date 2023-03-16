@@ -8,4 +8,5 @@ for i in range(K):
         change.append(num_list[i][j+1] - num_list[i][j])
     num_list.append(change)
 
-print(",".join(map(str, change)))
+if K != 0: print(",".join(map(str, change)))
+else : print(",".join(map(str, num_list[0])))
